@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="foquete.ico" type="image/x-icon">
+    <style>
+        /* 
+            Seletores Personaliados
+            # = id
+            . = class
+            : = pseudoclass
+            :: = pseudo-element
+            > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        a{
+            color: cadetblue;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        a:visited{
+            color: aquamarine;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: rgb(94, 255, 0);
+            text-decoration: underline;
+        }
+        .especial{
+            background-color: rgba(252, 250, 155, 0.479);
+            width: 101px;
+        }
+        .especial::before{
+            content: '⚠ ';
+        }
+        .especial::after{
+            content: ' ⚠';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/cursos/" target="_blank">Site do CursoemVideo</a></li>
+        <li class="especial"><a href="#linkespecial">Atenção</a></li>
+    </ul>
+    
+</body>
+</html>

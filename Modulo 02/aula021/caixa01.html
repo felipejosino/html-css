@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="foquete.ico" type="image/x-icon">
+    <style>
+           h1{ /*Elemento do tipo box-level*/
+            /* Caso queira transformar em inline-level usar código abaixo */
+            /* display: inline;  ao usa esse código voce não poder usar largura e altura*/
+            
+            background-color: lightgray;
+            
+            /* Box Size = height e width, ou  seja size da caixa*/
+            height:300px;
+            width:300px;
+
+            /* Propriedades anatomica abaixo */
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet; */
+            border: 10px solid blueviolet;
+            
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /*
+            padding: 10px 10px 10px 10px; 
+            padding: 10px;                Todos receberam valor de 10px
+            padding: 10px 20px;           Top e Bottom recebe 10px e R e L recebe 20px
+            */
+            padding: 10px;
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px; */
+
+            /* obs: Margin da direita e esquerda pode ser substituida por auto, vai calcualar e deixar centralizado laterais */
+            margin: 20px auto 25px auto;
+
+            /* outline-width: 10px;
+            outline-style: dotted;
+            outline-color: crimson; */
+            outline: 10px dotted crimson;
+           }
+
+           a{ /* inline-leve */
+            /* Caso queira transformar em box-level usar código abaixo */
+            /* display: block; */
+
+            border: 5px dashed burlywood;
+            padding: 3px;
+           }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas o <a href="#">links exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

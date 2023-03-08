@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="foquete.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+                Medidas Absolutas
+                    cm, mm, in(polegada), px, pt, pc(paica)
+
+                Medidas Relativas
+                    em(Tamanho atual da fonte, relativo ao M maiusculo de uma letra)
+                    ex(Tamanho da altura X de uma fonte)
+                    rem(tipo em porem relativo ao r:(root, fonte que esta configurada no body))
+                    vw(view widht, largura da viwe port:(tamanho da tela))
+                    vh(altua da viwew port)
+                    %
+
+                    *Recomendado pela w3c px ou em
+
+                    ex: 16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            /* lighter normal bold bolder */
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1{
+            /* 
+                Shorthand font
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+
+            para: font: italic bolder 2em 'Arial', 'sans-serif';
+
+                -Ordem
+                    - 1° font-style
+                    - 2° font-weight
+                    - 3° font-size
+                    - 4° font-family
+            */
+            font: italic bolder 2em 'Arial', 'sans-serif';
+        }
+        h2{
+            font: italic bold 3em 'Arial', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit enim quaerat nisi accusamus expedita. Aut officia ducimus impedit eius rem maxime porro facilis nulla quam modi, possimus fugit, rerum vel. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vitae maiores asperiores repellat dolorum, alias iusto dolorem quas doloribus cupiditate eveniet maxime voluptate quia harum neque ea vero nesciunt necessitatibus.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere nobis voluptates natus libero possimus praesentium, repellendus recusandae eum provident asperiores alias, nam quam nisi molestiae laboriosam blanditiis officia eaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium vero ad alias repudiandae a pariatur totam, quam beatae enim omnis aliquid iste in quasi, debitis exercitationem modi? Rerum, quaerat.</p>
+    
+</body>
+</html>
