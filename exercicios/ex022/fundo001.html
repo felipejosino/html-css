@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <link rel="shortcut icon" href="imagens/foquete.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: url('imagens/wallpaper004.jpg');
+        }
+        div.quadrado{
+            display: inline-block;
+            background-color: lightgray;
+            width: 200px;
+            height:200px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        div#q1{
+            background-color: skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, skyblue, rgb(60, 60, 175), rgb(0, 0, 255) );
+        }
+        div#q3{
+            background-image: url('imagens/pattern001.png');
+        }
+    </style>
+</head>
+<body>
+    <div id="q1" class="quadrado"></div>
+    <div id="q2" class="quadrado"></div>
+    <div id="q3" class="quadrado"></div>
+    
+</body>
+</html>
