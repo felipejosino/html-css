@@ -34,6 +34,7 @@
              <!--
                 Anatomia para tabelas grandes
                 TABLE
+                    CAPTION
                     THEAD
                         TR,TD,TH
                     TBODY
@@ -44,11 +45,13 @@
              <article>
                  <h2>Veja a tabela com os dados atualizados do IBGE</h2>
                  <table>
-                    
+                    <caption>
+                        População das Unidades Federativas
+                    </caption>
                     <thead>
                         <tr>
-                            <th>Unidade Federativa</th>
-                            <th>População</th>
+                            <th scope="col">Estados</th>
+                            <th scope="col" style="width:50px;">População</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -163,7 +166,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Total de Habitantes</th>
+                            <th scope="row">Total de Habitantes</th>
                             <td class="num"><strong>213.317.639</strong></td>
                         </tr>
                     </tfoot>
@@ -177,9 +180,8 @@
                     Tabela com estimativa de população dos estados brasileiros, segundo dados do IBGE / IBGE
                 </small>
                 <br>
-                <strong>*Com informações da Agência Brasil</strong>
-                     
-                     </p>
+                <strong>*Com informações da Agência Brasil</strong>     
+            </p>
          </aside>
     </main>
      <footer>

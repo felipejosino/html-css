@@ -25,25 +25,44 @@ main{
 section > article{
     text-align: center;
 }
-table{
-    margin: auto;
-}
 p{
     text-align: justify;
 }
 table{
     width: 400px;
+    margin: auto;
     border-collapse: collapse;
+    position: relative;
+}
+caption{
+    background-color: rgba(211, 211, 211, 0.719);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px;
 }
 th,td{
     border: 1px solid black;
     padding: 10px;
 }
+td{
+    text-align: left;
+}
 td.num{
     text-align: right;
 }
-thead, tfoot{
+tbody > tr:nth-child(odd){/* odd ou 2n-1*/
+    background-color: white;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
     background-color: gray;
+}
+tbody > tr:nth-child(even){ /*even ou 2n*/
+    background-color: lightgray;
+}
+thead, tfoot{
+    background-color: rgb(128, 128, 128);
     color: white;
 }
 footer p{
