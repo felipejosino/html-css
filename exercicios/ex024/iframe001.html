@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <link rel="shortcut icon" href="imagens/foquete.ico" type="image/x-icon">
+    <style>
+        iframe{
+            width: 300px;
+            height: 200px;
+            border: 1px dashed black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+
+    <!-- 
+        Tamanho Padão do iframe 300x150 
+        -ALtere diretamente no que deseja altera ou use style 
+    -->
+    <p>
+         Link: Acessando o site do 
+
+        <a href="https://www.cursoemvideo.com/cursos/" target="_blank">CursoemVideo</a> 
+        
+        para aprender a programar.
+    </p>
+
+    <br>
+
+    <p>
+        Iframe: Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com/cursos/" frameborder="0">
+            <!--Caso dispositivo seja incompativel vai aparecer o que esta aqui dentro do iframe-->
+            <!-- Mensagem ou Link-->
+            <a href="https://www.cursoemvideo.com/cursos/" target="_blank">CursoemVideo</a>
+        </iframe> 
+        
+        para aprender a programar.
+    </p>
+    <hr>
+    <p>
+        Link: Acessando o site do 
+
+       <a href="https://felipejosino.github.io/projeto-cordel/" target="_blank">projeto cordel</a> 
+       
+       para aprender a programar.
+   </p>
+
+   <br>
+    <p>
+        iframe:Acessando projeto Cordel pelo meu repositório
+
+        <iframe src="https://felipejosino.github.io/projeto-cordel/" frameborder="0">
+            no <a href="https://felipejosino.github.io/projeto-cordel/" target="_blank">GitHub</a>
+        </iframe>
+    </p>
+
+    <hr>
+    <p>
+        Usando link: Acessando o site do 
+        
+        <a href="https://www.google.com.br/" target="_blank">Google</a> 
+        
+        para aprender a programar.
+    </p>
+    <br>
+    <p>
+        Usando iframe: Acessando o site do 
+        
+        <iframe src="https://www.google.com.br/" frameborder="0"></iframe> 
+        
+        para aprender a programar.
+    </p>
+    <p><strong>*Alguns site como da Google existe uma proteção para que o seu conteudo não seja exibido dentro de iframe por sites de terceiros</strong></p>
+
+</body>
+</html>
