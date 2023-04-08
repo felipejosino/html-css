@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="imagens/foquete.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="iSxMas" value="M" checked>
+            <label for="iSxMas">Mascuino</label>
+            <br>
+            <input type="radio" name="sexo" id="iSxFen" value="F">
+            <label for="iSxFen">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esBas" id="iesBas" checked>
+                <label for="iesBas">Basquete</label>
+                <br>
+                <input type="checkbox" name="esFut" id="iesFut" checked>
+                <label for="iesFut">Futebol</label>
+                <br>
+                <input type="checkbox" name="esNat" id="iesNat">
+                <label for="iesNat">Natação</label>
+                <br>
+                <input type="checkbox" name="esTen" id="iesTen" checked>
+                <label for="iesTen">Tênis</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
